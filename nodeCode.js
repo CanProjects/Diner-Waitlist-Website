@@ -62,8 +62,9 @@ const Form = mongoose.model('Customer', formSchema);
 app.use(express.static('css'))
 app.use(express.static('js'))
 app.use(express.static('img'))
+const port = process.env.PORT
 
-app.listen (3000, () => {})
+app.listen (port, () => {})
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname,'/views'))
