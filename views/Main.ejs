@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ourStyle.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+    <script src = "bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.ico">
+    <title>Myeong Dong Chatswood</title>
+</head>
+
+
+<body>
+    <div id="mainContainer">
+        <div id= 'backLogo'>
+            <img id = 'logo' src="logo.jpg">  
+        </div>
+        <div id = 'center'>
+            <div id = 'welcome'>
+                <h3>Enter Queue</h3>
+            </div>
+
+            <form action="/queue" method="post">
+                <p>
+                    <label for ='guests'>Number of Diners:</label>
+                    <p></p>
+                    <input id="guests" type ='number' min="1" name = 'number' required>
+                </p> 
+                <p>
+                    <label for='name'>Your Name:</label>
+                    <p></p>
+                    <input id="name" name = 'name' type='text' required>
+                </p>
+                <p>
+                <label for='bbq'>Will You Need a Barbeque?</label>
+                <p></p>
+                <label id ='Yes' for='bbq'>Yes</label>
+                <input id="bbq" type='radio' name='grill' value="Yes" required>
+                <label id = 'no' for='nobbq'>No</label>
+                <input id="nobbq" type='radio' name='grill' value ="No">
+                </p>
+                <button>Submit</button>
+            </form>
+
+            <br>
+            <a href="/login">Store Owner Login</a>
+        </div>
+    </div>
+
+</body>
+</html>

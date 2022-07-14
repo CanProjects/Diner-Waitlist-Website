@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ourStyle.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+        <link rel="icon" href="icon.ico">
+    <script src="bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Myeong Dong Chatswood</title>
+</head>
+
+
+<body>
+    <div id="mainContainer">
+        <div id='backLogo'>
+            <img id='logo' src="logo.jpg">
+        </div>
+        <div id='center'>
+            <div id='welcome'>
+                <h3>Customers Waiting</h3>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Number</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Diners</th>
+                            <th scope="col">BBQ</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <% for(let [index,detail] of details.entries()) { %>
+                        <tr>
+                            <td>
+                                <%= index + 1 %> 
+                            </td>
+                            <td>
+                                <%=detail.cname%>
+                            </td>
+                            <td>
+                                <%=detail.guests%>
+                            </td>
+                            <td>
+                                <%=detail.bbq%>
+                            </td>
+                            </td>
+                            <% } %>
+                        </tr>
+                    </tbody>
+                </table>
+            <div>
+                <a id="listLink" href="/">Add a New Customer</a>
+                <a id="listLink" href="/listCustomer">Refresh List</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

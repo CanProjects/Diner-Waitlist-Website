@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ourStyle.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+    <script src="bootstrap.min.js"></script>
+        <link rel="icon" href="icon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Myeong Dong Chatswood</title>
+</head>
+
+
+<body>
+    <div id="mainContainer">
+        <div id='backLogo'>
+            <img id='logo' src="logo.jpg">
+        </div>
+        <div id='center'>
+            <div id='welcome'>
+                <h3>Reservation Confirmed</h3>
+                <h3><b>For: </b><%= names %></h3>
+                <h3><b>People: </b><%= number %></h3>
+                <h3><b>Barbeque: </b><%= grill %></h3>
+                <a id="listLink" href="/listCustomer">View Wait List</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
