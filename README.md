@@ -5,7 +5,7 @@
 
 A basic waitlist website for a korean barbeque diner. env file containing database url/secret ommitted for obvious reasons. Store owner password is 'h'.
 
-Tech stack includes: ejs, node, mongoDB, html and css.
+Tech stack includes: ejs, node, express, mongoDB, html and css.
 
 # The website is hosted here
 
