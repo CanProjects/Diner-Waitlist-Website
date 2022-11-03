@@ -1,5 +1,8 @@
 # Diner-Waitlist-Website
 
+![Capture](https://user-images.githubusercontent.com/110444153/199830512-8330308c-2931-423d-8000-4fb1d3c8f19d.PNG)
+
+
 A basic waitlist website for a korean barbeque diner. env file containing database url/secret ommitted for obvious reasons. Store owner password is 'h'.
 
 Tech stack includes: ejs, node, mongoDB, html and css.
